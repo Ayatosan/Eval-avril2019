@@ -9,25 +9,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="<?php echo base_url()?>assets/img/ico/favicon.ico">
-    <link rel="apple-touch-icon" sizes="144x144" href="<?php echo base_url()?>assets/img/ico/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="<?php echo base_url()?>assets/img/ico/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo base_url()?>assets/img/ico/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" href="<?php echo base_url()?>assets/img/ico/apple-touch-icon-57x57.png">
+    <link rel="shortcut icon" href="<?= base_url()?>assets/img/ico/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="144x144" href="<?= base_url()?>assets/img/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="<?= base_url()?>assets/img/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<?= base_url()?>assets/img/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" href="<?= base_url()?>assets/img/ico/apple-touch-icon-57x57.png">
 
     <title>Kompleet by Distinctive Themes</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="<?php echo base_url()?>assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>assets/css/animate.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>assets/css/plugins.css" rel="stylesheet">
+    <link href="<?= base_url()?>assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url()?>assets/css/animate.css" rel="stylesheet">
+    <link href="<?= base_url()?>assets/css/plugins.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="<?php echo base_url()?>assets/css/style.css" rel="stylesheet">
+    <link href="<?= base_url()?>assets/css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="<?php echo base_url()?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url()?>assets/css/pe-icons.css" rel="stylesheet">
+    <link href="<?= base_url()?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url()?>assets/css/pe-icons.css" rel="stylesheet">
 
 </head>
 
@@ -37,7 +38,7 @@
 
         <div class="preloader">
             <div class="preloader-img">
-                <span class="loading-animation animate-flicker"><img src="<?php echo base_url()?>assets/img/loading.GIF" alt="loading"/></span>
+                <span class="loading-animation animate-flicker"><img src="<?= base_url()?>assets/img/loading.GIF" alt="loading"/></span>
             </div>
         </div>
 
@@ -74,6 +75,7 @@
                                 </li>
                                 <li>
                                     <div class="meta-item"><i class="fa fa-mobile"></i> 0631789879</div>
+                                    <a href="Welcome/username">bon je test </a>
                                 </li>
                             </ul>
                         </div>
@@ -273,8 +275,8 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Connexion <span class="pe-7s-angle-down"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="index-shop.html">Inscription</a></li>
-                                <li><a href="single-product.html">Se connecter</a></li>
+                                <li><a href="<?= base_url() ?>Welcome/inscription">Inscription</a></li>
+                                <li><a href="inscription.php">Se connecter</a></li>
                             </ul>
                         </li>
                         <li><a href="#search"><i class="pe-7s-search"></i></a></li>
@@ -313,7 +315,7 @@
                         <ul class="masonry-portfolio-items isotope list-unstyled">
                             <li class="col-sm-3 col-xs-6 masonry-portfolio-item apps isotope-item mb30">
                                 <div class="hover-item">
-                                    <img src="<?php echo base_url()?>assets/img/homepages/agency-1.jpg" class="img-responsive smoothie" alt="">
+                                    <img src="<?= base_url()?>assets/img/homepages/agency-1.jpg" class="img-responsive smoothie" alt="">
                                     <div class="overlay-item-caption smoothie"></div>
                                     <div class="hover-item-caption smoothie">
                                         <div class="vertical-center smoothie">
@@ -325,7 +327,7 @@
                             </li>
                             <li class="col-sm-3 col-xs-6 masonry-portfolio-item apps isotope-item mb30">
                                 <div class="hover-item">
-                                    <img src="<?php echo base_url()?>assets/img/homepages/blog-2.jpg" class="img-responsive smoothie" alt="">
+                                    <img src="<?= base_url()?>assets/img/homepages/blog-2.jpg" class="img-responsive smoothie" alt="">
                                     <div class="overlay-item-caption smoothie"></div>
                                     <div class="hover-item-caption smoothie">
                                         <div class="vertical-center smoothie">
@@ -337,7 +339,7 @@
                             </li>
                             <li class="col-sm-3 col-xs-6 masonry-portfolio-item apps isotope-item mb30">
                                 <div class="hover-item">
-                                    <img src="<?php echo base_url()?>assets/img/homepages/corporate-1.jpg" class="img-responsive smoothie" alt="">
+                                    <img src="<?= base_url()?>assets/img/homepages/corporate-1.jpg" class="img-responsive smoothie" alt="">
                                     <div class="overlay-item-caption smoothie"></div>
                                     <div class="hover-item-caption smoothie">
                                         <div class="vertical-center smoothie">
@@ -349,7 +351,7 @@
                             </li>
                             <li class="col-sm-3 col-xs-6 masonry-portfolio-item apps isotope-item mb30">
                                 <div class="hover-item">
-                                    <img src="<?php echo base_url()?>assets/img/homepages/landing-2.jpg" class="img-responsive smoothie" alt="">
+                                    <img src="<?= base_url()?>assets/img/homepages/landing-2.jpg" class="img-responsive smoothie" alt="">
                                     <div class="overlay-item-caption smoothie"></div>
                                     <div class="hover-item-caption smoothie">
                                         <div class="vertical-center smoothie">
@@ -361,7 +363,7 @@
                             </li>
                             <li class="col-sm-3 col-xs-6 masonry-portfolio-item apps isotope-item mb30">
                                 <div class="hover-item">
-                                    <img src="<?php echo base_url()?>assets/img/homepages/portfolio-1.jpg" class="img-responsive smoothie" alt="">
+                                    <img src="<?= base_url()?>assets/img/homepages/portfolio-1.jpg" class="img-responsive smoothie" alt="">
                                     <div class="overlay-item-caption smoothie"></div>
                                     <div class="hover-item-caption smoothie">
                                         <div class="vertical-center smoothie">
@@ -375,4 +377,3 @@
                     </div>
                 </div>
             </div>
-     

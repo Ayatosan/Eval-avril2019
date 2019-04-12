@@ -5,7 +5,8 @@ class Welcome extends CI_Controller {
 
 public function __construct(){
 	parent::__construct();
-$this->load->helper('url');
+	$this->load->helper('url');
+
 }
 public function base()
 {
@@ -29,5 +30,13 @@ public function base()
 		$this->load->renderWithTemplate('bar');
 	}
 
+	public function inscription(){
+	$this->load->view('inscription');
+	$_SESSION['user'] = 'Yop !!';
+	// $this->load->database();
+}
+public function username(){
 
+	echo $_SESSION['user'];
+}
 }

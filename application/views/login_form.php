@@ -7,7 +7,7 @@
 ?>
 <head>
 <title>Login Form</title>
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
+<link rel="stylesheet" type="text/css" href="<?= base_url(); ?>css/style.css">
 <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Open+Sans+Condensed:300|Raleway' rel='stylesheet' type='text/css'> -->
 </head>
 <body>
@@ -29,7 +29,7 @@
 <div id="login">
 <h2>Login Form</h2>
 <hr/>
-<?php echo form_open('user_authentication/user_login_process'); ?>
+<?= form_open('user_authentication/user_login_process'); ?>
 <?php
 echo "<div class='error_msg'>";
 if (isset($error_message)) {
@@ -43,8 +43,8 @@ echo "</div>";
 <label>Password :</label>
 <input type="password" name="password" id="password" placeholder="**********"/><br/><br />
 <input type="submit" value=" Login " name="submit"/><br />
-<a href="<?php echo base_url() ?>index.php/user_authentication/user_registration_show">To SignUp Click Here</a>
-<?php echo form_close(); ?>
+<a href="<?= base_url() ?>index.php/user_authentication/user_registration_show">To SignUp Click Here</a>
+<?= form_close(); ?>
 </div>
 </div>
 </body>

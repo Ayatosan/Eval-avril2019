@@ -1,6 +1,6 @@
 <?php
 
-//session_start(); //we need to start session in order to access it through CI
+// session_start(); //we need to start session in order to access it through CI
 // defined('BASEPATH') OR exit('No direct script access allowed');
 Class User_Authentication extends CI_Controller {
 

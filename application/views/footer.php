@@ -17,7 +17,7 @@
               <div>
                 <div class="media">
                   <div class="pull-left">
-                    <img class="widget-img" src="<?php echo base_url() ?>assets/img/widget/widget1.jpg" alt="">
+                    <img class="widget-img" src="<?= base_url() ?>assets/img/widget/widget1.jpg" alt="">
                   </div>
                   <div class="media-body">
                     <span class="media-heading"><a href="#">Blog Post A</a></span>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="media">
                   <div class="pull-left">
-                    <img class="widget-img" src="<?php echo base_url() ?>assets/img/widget/widget2.jpg" alt="">
+                    <img class="widget-img" src="<?= base_url() ?>assets/img/widget/widget2.jpg" alt="">
                   </div>
                   <div class="media-body">
                     <span class="media-heading"><a href="#">Blog Post B</a></span>
@@ -106,7 +106,7 @@
         <div>
           <div class="media">
             <div class="pull-left">
-              <img class="widget-img" src="<?php echo base_url() ?>assets/img/widget/widget1.jpg" alt="">
+              <img class="widget-img" src="<?= base_url() ?>assets/img/widget/widget1.jpg" alt="">
             </div>
             <div class="media-body">
               <span class="media-heading"><a href="#">Panic In London</a></span>
@@ -115,7 +115,7 @@
           </div>
           <div class="media">
             <div class="pull-left">
-              <img class="widget-img" src="<?php echo base_url() ?>assets/img/widget/widget2.jpg" alt="">
+              <img class="widget-img" src="<?= base_url() ?>assets/img/widget/widget2.jpg" alt="">
             </div>
             <div class="media-body">
               <span class="media-heading"><a href="#">New iPhone News</a></span>
@@ -124,7 +124,7 @@
           </div>
           <div class="media">
             <div class="pull-left">
-              <img class="widget-img" src="<?php echo base_url() ?>assets/img/widget/widget3.jpg" alt="">
+              <img class="widget-img" src="<?= base_url() ?>assets/img/widget/widget3.jpg" alt="">
             </div>
             <div class="media-body">
               <span class="media-heading"><a href="#">Our Year In Review</a></span>
@@ -133,7 +133,7 @@
           </div>
           <div class="media">
             <div class="pull-left">
-              <img class="widget-img" src="<?php echo base_url() ?>assets/img/widget/widget4.jpg" alt="">
+              <img class="widget-img" src="<?= base_url() ?>assets/img/widget/widget4.jpg" alt="">
             </div>
             <div class="media-body">
               <span class="media-heading"><a href="#">jQuery Tutorial</a></span>
@@ -142,7 +142,7 @@
           </div>
           <div class="media">
             <div class="pull-left">
-              <img class="widget-img" src="<?php echo base_url() ?>assets/img/widget/widget5.jpg" alt="">
+              <img class="widget-img" src="<?= base_url() ?>assets/img/widget/widget5.jpg" alt="">
             </div>
             <div class="media-body">
               <span class="media-heading"><a href="#">Sheen Interview</a></span>
@@ -177,11 +177,11 @@
 </div>
 
 
-<script src="<?php echo base_url() ?>/assets/js/jquery.js"></script>
-<script src="<?php echo base_url() ?>assets/js/bootstrap.min.js"></script>
-<script src="<?php echo base_url() ?>assets/js/plugins.js"></script>
+<script src="<?= base_url() ?>/assets/js/jquery.js"></script>
+<script src="<?= base_url() ?>assets/js/bootstrap.min.js"></script>
+<script src="<?= base_url() ?>assets/js/plugins.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-<script src="<?php echo base_url() ?>assets/js/init.js"></script>
+<script src="<?= base_url() ?>assets/js/init.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -194,9 +194,9 @@
   $(document).ready(function() {
     'use strict';
     jQuery('#headerwrap').backstretch([
-      "<?php echo base_url() ?>assets/img/bg/bg1.jpg",
-      "<?php echo base_url() ?>assets/img/bg/bg2.jpg",
-      "<?php echo base_url() ?>assets/img/bg/bg3.jpg"
+      "<?= base_url() ?>assets/img/bg/bg1.jpg",
+      "<?= base_url() ?>assets/img/bg/bg2.jpg",
+      "<?= base_url() ?>assets/img/bg/bg3.jpg"
     ], {
       duration: 8000,
       fade: 500

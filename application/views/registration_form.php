@@ -6,7 +6,7 @@ header("location: http://localhost/login/index.php/user_authentication/user_logi
 ?>
 <head>
 <title>Registration Form</title>
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/admin_style.css">
+<link rel="stylesheet" type="text/css" href="<?= base_url(); ?>css/admin_style.css">
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Open+Sans+Condensed:300|Raleway' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -46,7 +46,7 @@ echo"<br/>";
 echo form_submit('submit', 'Sign Up');
 echo form_close();
 ?>
-<a href="<?php echo base_url() ?> ">For Login Click Here</a>
+<a href="<?= base_url() ?> ">For Login Click Here</a>
 </div>
 </div>
 </body>
