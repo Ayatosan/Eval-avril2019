@@ -29,7 +29,9 @@ public function base()
 		$id = uniqid();
 		$this->load->renderWithTemplate('bar');
 	}
-
+	public function connection() {
+		$this->load->view('connection');
+	}
 	public function inscription(){
 	$this->load->view('inscription');
 	$_SESSION['user'] = 'Yop !!';
@@ -38,5 +40,8 @@ public function base()
 public function username(){
 
 	echo $_SESSION['user'];
+}
+public function test(){
+	$this->load->view('test');
 }
 }

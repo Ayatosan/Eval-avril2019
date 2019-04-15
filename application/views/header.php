@@ -276,7 +276,7 @@
                             <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Connexion <span class="pe-7s-angle-down"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="<?= base_url() ?>Welcome/inscription">Inscription</a></li>
-                                <li><a href="inscription.php">Se connecter</a></li>
+                                <li><a href="<?= base_url() ?>Welcome/connection">Se connecter</a></li>
                             </ul>
                         </li>
                         <li><a href="#search"><i class="pe-7s-search"></i></a></li>
