@@ -31,7 +31,12 @@
 <!--===============================================================================================-->
 </head>
 <body style="background-color: #999999;">
+<?php
 
+ echo form_open('Main/login_action');
+
+
+?>
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="login100-more" style="background-image: url('<?= base_url()?>/assets/Inscription/images/multi.jpg');"></div>
@@ -42,22 +47,22 @@
 						Connexion
 					</span>
 
-			
 
-		
+
+					<?php echo validation_errors(); ?>
 					<div class="wrap-input100 validate-input" data-validate="Username is required">
-						<span class="label-input100">Pseudo</span>
-						<input class="input100" type="text" name="username" placeholder="">
+						<span class="label-input100"> Pseudo</span>
+						<input class="input100" type="text" name="username" placeholder="" > <?php  form_input('username', $this->input->post('username')); ?>
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<span class="label-input100">Mot de passe</span>
-						<input class="input100" type="text" name="pass" placeholder="*************">
+						<span class="label-input100" >Mot de passe</span>
+						<input class="input100" type="text" name="password" placeholder="*************"> <?php  form_password('password', $this->input->post('password')); ?>
 						<span class="focus-input100"></span>
 					</div>
 
-				
+
 
 					<div class="flex-m w-full p-b-33">
 						<div class="contact100-form-checkbox">
@@ -78,12 +83,12 @@
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
+							<button class="login100-form-btn"  action="<?php  form_submit('login_submit', 'login') ?>" >
                             Se connecter
 							</button>
 						</div>
 
-						<a href="#" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+						<a href='<?php echo base_url()."index.php/Welcome/inscription"; ?>' class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
 							Pas encore inscrit?
 							<i class="fa fa-long-arrow-right m-l-5"></i>
 						</a>
@@ -92,7 +97,9 @@
 			</div>
 		</div>
 	</div>
+<?php	echo form_close();
 
+?>
 <!--===============================================================================================-->
 	<script src="<?= base_url()?>/assets/inscription/vendor/jquery/jquery-3.2.1.min.js" type="30aa7d126a9a9a3da59e808a-text/javascript"></script>
 <!--===============================================================================================-->

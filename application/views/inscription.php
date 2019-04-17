@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login </title>
+	<title>Inscription </title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -41,48 +41,46 @@
 					<span class="login100-form-title p-b-59">
 						Inscription
 					</span>
+					<?php
+		echo form_open('Main/signin_validation');
+
+echo validation_errors();
+?>
 
 					<div class="wrap-input100 validate-input" data-validate="Name is required">
-						<span class="label-input100">Votre nom</span>
-						<input class="input100" type="text" name="name" placeholder="Nom...">
+						<span class="label-input100"	<?php  form_input('name') ?>>Votre nom</span>
+						<input class="input100"  type="text" name="name" placeholder="Nom...">
 						<span class="focus-input100"></span>
 					</div>
-
+					<?php	echo validation_errors();   ?>
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<span class="label-input100">Email</span>
+						<span class="label-input100"<?php  form_input('email') ?>>Email</span>
 						<input class="input100" type="text" name="email" placeholder="Adresse mail...">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Username is required">
-						<span class="label-input100">Pseudo</span>
+						<span class="label-input100"<?php  form_input('username') ?>>Pseudo</span>
 						<input class="input100" type="text" name="username" placeholder="Username...">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<span class="label-input100">Mot de passe</span>
+						<span class="label-input100"<?php  form_password('password') ?>>Mot de passe</span>
 						<input class="input100" type="text" name="pass" placeholder="*************">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Repeat Password is required">
-						<span class="label-input100">Répeter votre mot de passe</span>
-						<input class="input100" type="text" name="repeat-pass" placeholder="*************">
+						<span class="label-input100"<?php  form_password('cpassword') ?>>Répeter votre mot de passe</span>
+						<input class="input100"  type="text" name="repeat-pass" placeholder="*************">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="flex-m w-full p-b-33">
 						<div class="contact100-form-checkbox">
 							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<!-- <label class="label-checkbox100" for="ckb1">
-								<span class="txt1">
-									I agree to the
-									<a href="#" class="txt2 hov1">
-										Terms of User
-									</a>
-								</span>
-							</label> -->
+
 						</div>
 
 
@@ -91,24 +89,26 @@
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
-								S'enregistrer
+							<button class="login100-form-btn"  action="<?php  form_submit('login_submit', 'login') ?>" >
+                Creer un compte
 							</button>
 						</div>
 
-						<a href="#" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+
+						<a href='<?php echo base_url()."index.php/Welcome/connection"; ?>' class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
 							Se connecter
 							<i class="fa fa-long-arrow-right m-l-5"></i>
-							<a href="Welcome/inscription"> bon je test </a>
 						</a>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
+	<?php echo form_close(); ?>
+
 
 <!--===============================================================================================-->
-	<script src="<?= base_url()?>/assets/inscription/vendor/jquery/jquery-3.2.1.min.js" type="30aa7d126a9a9a3da59e808a-text/javascript"></script>
+<script src="<?= base_url()?>/assets/inscription/vendor/jquery/jquery-3.2.1.min.js" type="30aa7d126a9a9a3da59e808a-text/javascript"></script>
 <!--===============================================================================================-->
 	<script src="<?= base_url()?>/assets/inscription/vendor/animsition/js/animsition.min.js" type="30aa7d126a9a9a3da59e808a-text/javascript"></script>
 <!--===============================================================================================-->

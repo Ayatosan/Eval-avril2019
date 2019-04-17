@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="<?= base_url()?>assets/img/ico/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" href="<?= base_url()?>assets/img/ico/apple-touch-icon-57x57.png">
 
-    <title>Kompleet by Distinctive Themes</title>
+    <title>Jonathan last Project</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="<?= base_url()?>assets/css/bootstrap.min.css" rel="stylesheet">
